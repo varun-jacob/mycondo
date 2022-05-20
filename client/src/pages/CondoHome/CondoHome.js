@@ -1,6 +1,6 @@
 import './CondoHome.scss'
 import { Link } from 'react-router-dom';
-import BookAmenity from '../../components/BookAmenity/BookAmenity';
+import AddAmenity from '../../components/AddAmenity/AddAmenity';
 
 const CondoHome = () => { 
     return (

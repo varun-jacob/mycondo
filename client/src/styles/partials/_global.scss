@@ -1,0 +1,22 @@
+@use "./fonts" as *;
+
+
+@mixin tablet {
+    @media (min-width: $breakpoint-tablet) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: $breakpoint-desktop) {
+        @content;
+    }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: 'Roboto', 'Arial';
+}

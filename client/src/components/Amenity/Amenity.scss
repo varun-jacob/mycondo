@@ -1,0 +1,57 @@
+.amenity {
+    width: 100%;
+    padding: 1rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+    margin-top: 0.5rem;
+    border-radius: 1rem;
+
+    &__name {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        color: royalblue;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    &__image {
+    object-fit: cover;
+    object-position: center;
+    height: 10rem;
+    width: 16rem;
+    border-radius: 0.5rem;
+    }
+
+    &__container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    &__button {
+        background-color: royalblue;
+        border: solid white 0.125rem;
+        padding: 1rem;
+        font-weight: 700;
+        color: white;
+        border-radius: 0.5rem;
+        width: 16rem;
+
+        &:hover {
+            background-color: mediumpurple;
+        }
+    }
+
+    &__time {
+        font-size: 1.125rem;
+        display: flex;
+        justify-content: center;
+        font-weight: 500;
+        width: 100%;
+    }
+}

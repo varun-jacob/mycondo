@@ -1,0 +1,46 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+
+    &__link{
+        text-decoration: none;
+    }
+
+    &__title{
+        color: #1e71bf;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+
+    &__link{
+        text-decoration: none;
+    }
+
+    &__title{
+        background-color: royalblue;
+        color:white;
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        margin: 0 2rem 1rem;
+        border: solid white 0.125rem;
+        border-radius: 1rem;
+        width: 7rem;
+        display: flex;
+        justify-content: center;
+
+        &:hover{
+            background-color:mediumpurple;
+        }
+    }
+}

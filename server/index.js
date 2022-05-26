@@ -1,6 +1,7 @@
+require("dotenv").config();
 const express = require('express');
 const app = express();
-require("dotenv").config();
+const cors = require("cors");
 const PORT = process.env.PORT || 8080;
 const BACKEND_URL = process.env.BACKEND_URL;
 
@@ -8,6 +9,9 @@ const condosRoutes = require('./routes/condosRoute');
 const residentsRoutes = require('./routes/residentsRoute');
 const amenitiesRoutes = require('./routes/amenitiesRoute');
 const bookingsRoutes = require('./routes/bookingsRoute');
+
+//middleware to enable CORS
+app.use(cors());
 
 //middleware to parse req.body
 app.use(express.json());

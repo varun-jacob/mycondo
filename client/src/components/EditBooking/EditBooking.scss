@@ -1,0 +1,24 @@
+@use "../../styles/partials/global";
+
+.editBooking {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__header {
+        background-color: #afd9ec;
+        padding: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__form {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem;
+    }
+}

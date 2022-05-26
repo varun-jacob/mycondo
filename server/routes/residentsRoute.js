@@ -16,5 +16,10 @@ router
 router
     .route('/:id/bookings')
     .get(residentsController.residentBookings);
+
+
+router
+    .route('/:id/login')
+    .get(residentsController.residentLogin);
     
 module.exports = router;

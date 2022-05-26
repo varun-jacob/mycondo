@@ -1,14 +1,19 @@
 @use "../../styles/partials/global";
 
 .deleteBooking {
-    width: 100%;
+    width: 20rem;
+    margin: auto;
+    background-color: aliceblue;
+    border-radius: 1rem;
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
     &__header {
-        background-color: #afd9ec;
+        background-color: royalblue;
+        color: white;
         padding: 1rem;
         width: 100%;
         text-align: center;

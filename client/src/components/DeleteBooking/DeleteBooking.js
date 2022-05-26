@@ -1,8 +1,6 @@
 import './DeleteBooking.scss'
-import { Link } from 'react-router-dom';
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
-import {Component} from 'react';
 
 const SERVER_URL = process.env.REACT_APP_SERVER_URL;
 

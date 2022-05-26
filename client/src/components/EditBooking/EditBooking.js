@@ -26,6 +26,7 @@ export const EditBooking = (props) => {
     const [condo_id, setCondoId] = useState(condoId);
     const [resident_id, setResidentId] = useState(residentId);
     const [amenity_id, setAmenityId] = useState("");
+    const [name, setName] = useState("");
     const [date, setDate] = useState("");
     const [start_time, setStartTime] = useState("");
     const [end_time, setEndTime] = useState("");
@@ -45,6 +46,7 @@ export const EditBooking = (props) => {
         axios
             .get(`${SERVER_URL}/bookings/${bookingId}`)
             .then((result) => {
+                setName(result.data.name)
                 setAmenityId(result.data.amenity_id)
                 setDate(calendarDateFormat(result.data.date))
                 setStartTime(result.data.start_time)
@@ -95,7 +97,7 @@ export const EditBooking = (props) => {
             <section className='editBooking'>
                 <h2 className='editBooking__header'>Edit Booking</h2>
                 <form className='editBooking__form' onSubmit={handleSubmit}>
-                    <select name="editBooking__list" id="editBooking__list" className="editBooking__List" onChange={(e) => setAmenityId(e.target.value)}required>
+                    <select name="editBooking__list" id="editBooking__list" className="editBooking__List" onChange={(e) => setAmenityId(e.target.value)} value={name} required>
                             <option value="" className='editBooking__options'>Select an Amenity</option>
                             {amenities.map(amenity => {
                                 return (

@@ -20,3 +20,18 @@
   overflow-x: hidden;
   font-family: 'Roboto', 'Arial';
 }
+
+.button {
+    background-color: royalblue;
+    border: solid white 0.125rem;
+    padding: 1rem;
+    font-weight: 700;
+    color: white;
+    border-radius: 0.5rem;
+    width: 100%;
+    margin-bottom: 1rem;
+
+    &:hover {
+        background-color: mediumpurple;
+    }
+}

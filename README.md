@@ -311,3 +311,24 @@ Start the back-end server
   npx nodemon index
 ```
 
+### ENV FILES
+
+Ensure the two env files are in the same relative path as client/server.
+
+#### CLIENT
+
+SET THE PORT AND BACKEND_URL TO YOUR CHOICE.  SEE BELOW FOR AN EXAMPLE
+
+```http
+REACT_APP_SERVER_URL=http://localhost:8080
+```
+
+#### SERVER
+
+SET THE PORT AND BACKEND_URL TO YOUR CHOICE.  SEE BELOW FOR AN EXAMPLE
+
+```http
+PORT=8080
+BACKEND_URL=http://localhost:
+```
+

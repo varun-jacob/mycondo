@@ -97,11 +97,11 @@ export const EditBooking = (props) => {
             <section className='editBooking'>
                 <h2 className='editBooking__header'>Edit Booking</h2>
                 <form className='editBooking__form' onSubmit={handleSubmit}>
-                    <select name="editBooking__list" id="editBooking__list" className="editBooking__List" onChange={(e) => setAmenityId(e.target.value)} value={name} required>
-                            <option value="" className='editBooking__options'>Select an Amenity</option>
+                    <select name="editAmenity__list" id="editAmenity__list" className="editAmenity__List" onChange={(e) => setAmenityId(e.target.value)}  required>
+                            <option value="" className='editAmenity__options'>Select an Amenity</option>
                             {amenities.map(amenity => {
                                 return (
-                                    <option key={amenity.id} id={amenity.id} value={amenity.id} className='editBooking__options'>{amenity.name}</option>
+                                    <option key={amenity.id} id={amenity.id} value={amenity.id} className='editAmenity__options'>{amenity.name}</option>
                                 )
                             })}
                     </select>
